@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KYHdq/pWqROVL24u2l7ltQfMPEHDWZVowQpJYE8PnIpi4pwyrbG9WHLK1c56gUVpaJ/5X1/oHv2CHeIZfhgItw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lucah\\OneDrive\\Documentos\\Telas\\MagSeguros\\MagSeguros.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lucah\\.nuget\\packages\\npgsql\\6.0.4\\npgsql.6.0.4.nupkg.sha512",
+    "C:\\Users\\lucah\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
