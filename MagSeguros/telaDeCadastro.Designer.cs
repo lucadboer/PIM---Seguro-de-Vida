@@ -1,6 +1,6 @@
 ﻿namespace MagSeguros
 {
-    partial class telaDeCadastro
+    partial class TelaDeCadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaDeCadastro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDeCadastro));
             this.logo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,6 +46,14 @@
             this.txtGenero = new System.Windows.Forms.TextBox();
             this.txtEstadoCivil = new System.Windows.Forms.TextBox();
             this.txtOcupacaoAtual = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.bttCadastrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // logo
@@ -187,6 +195,7 @@
             this.txtEstadoCivil.Name = "txtEstadoCivil";
             this.txtEstadoCivil.Size = new System.Drawing.Size(108, 23);
             this.txtEstadoCivil.TabIndex = 20;
+            this.txtEstadoCivil.TextChanged += new System.EventHandler(this.txtEstadoCivil_TextChanged);
             // 
             // txtOcupacaoAtual
             // 
@@ -195,13 +204,109 @@
             this.txtOcupacaoAtual.Size = new System.Drawing.Size(120, 23);
             this.txtOcupacaoAtual.TabIndex = 21;
             // 
-            // telaDeCadastro
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(800, 189);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(165, 17);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Possui alguma doença?";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Sim",
+            "Não"});
+            this.comboBox1.Location = new System.Drawing.Point(800, 226);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(138, 23);
+            this.comboBox1.TabIndex = 23;
+            this.comboBox1.Text = "Selecione uma opção";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(800, 270);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(71, 19);
+            this.checkBox1.TabIndex = 24;
+            this.checkBox1.Text = "Diabetes";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(800, 345);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(109, 19);
+            this.checkBox2.TabIndex = 25;
+            this.checkBox2.Text = "Outras Doenças";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(800, 308);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(67, 19);
+            this.checkBox3.TabIndex = 26;
+            this.checkBox3.Text = "Anemia";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(889, 308);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(104, 19);
+            this.checkBox5.TabIndex = 28;
+            this.checkBox5.Text = "Câncer de Pele";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(889, 270);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(90, 19);
+            this.checkBox6.TabIndex = 29;
+            this.checkBox6.Text = "Hipertensão";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // bttCadastrar
+            // 
+            this.bttCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(252)))));
+            this.bttCadastrar.FlatAppearance.BorderColor = System.Drawing.SystemColors.Desktop;
+            this.bttCadastrar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bttCadastrar.Location = new System.Drawing.Point(841, 401);
+            this.bttCadastrar.Name = "bttCadastrar";
+            this.bttCadastrar.Size = new System.Drawing.Size(82, 31);
+            this.bttCadastrar.TabIndex = 30;
+            this.bttCadastrar.Text = "Cadastrar";
+            this.bttCadastrar.UseVisualStyleBackColor = false;
+            this.bttCadastrar.Click += new System.EventHandler(this.bttCadastrar_Click);
+            // 
+            // TelaDeCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MagSeguros.Properties.Resources.logo_pim;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(952, 537);
+            this.ClientSize = new System.Drawing.Size(996, 537);
+            this.Controls.Add(this.bttCadastrar);
+            this.Controls.Add(this.checkBox6);
+            this.Controls.Add(this.checkBox5);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.txtOcupacaoAtual);
             this.Controls.Add(this.txtEstadoCivil);
             this.Controls.Add(this.txtGenero);
@@ -222,7 +327,8 @@
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "telaDeCadastro";
+            this.Name = "TelaDeCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mag Seguros";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -248,5 +354,13 @@
         private TextBox txtGenero;
         private TextBox txtEstadoCivil;
         private TextBox txtOcupacaoAtual;
+        private Label label9;
+        private ComboBox comboBox1;
+        private CheckBox checkBox1;
+        private CheckBox checkBox2;
+        private CheckBox checkBox3;
+        private CheckBox checkBox5;
+        private CheckBox checkBox6;
+        private Button bttCadastrar;
     }
 }

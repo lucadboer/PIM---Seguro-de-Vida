@@ -10,11 +10,41 @@ using System.Windows.Forms;
 
 namespace MagSeguros
 {
-    public partial class telaDeCadastro : Form
+    public partial class TelaDeCadastro : Form
     {
-        public telaDeCadastro()
+        public TelaDeCadastro()
         {
             InitializeComponent();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEstadoCivil_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bttCadastrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

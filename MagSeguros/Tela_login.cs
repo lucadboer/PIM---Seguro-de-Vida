@@ -2,9 +2,9 @@ using Npgsql;
 
 namespace MagSeguros
 {
-    public partial class MagTelaInicial : Form
+    public partial class Tela_login : Form
     {
-        public MagTelaInicial()
+        public Tela_login()
         {
             InitializeComponent();
         }
@@ -36,19 +36,22 @@ namespace MagSeguros
         }
 
         private void bttEntrar_Click(object sender, EventArgs e)
-        {
+        {   
 
-            NpgsqlConnection conn = new NpgsqlConnection(connString);
-            conn.Open();
+            //NpgsqlConnection conn = new NpgsqlConnection(connString);
+            //conn.Open();
 
            // NpgsqlConnection cmd = new NpgsqlConnection(connString);
 
             // realizar querys
 
-            String usuario = txbUsuario.Text;
-            String senha = txbSenha.Text;
+            //String usuario = txbUsuario.Text;
+            //String senha = txbSenha.Text;
             
             //MessageBox.Show("Login");
+            Tela_escolha tela_Escolha = new Tela_escolha();
+            tela_Escolha.Show();
+
         }
 
         private void label1_Click_1(object sender, EventArgs e)

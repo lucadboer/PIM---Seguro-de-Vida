@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MagSeguros
 {
-    public partial class tela2 : Form
+    public partial class Tela_escolha : Form
     {
-        public tela2()
+        public Tela_escolha()
         {
             InitializeComponent();
         }
@@ -34,7 +34,8 @@ namespace MagSeguros
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            TelaDeCadastro telaDeCadastro = new TelaDeCadastro();
+            telaDeCadastro.ShowDialog();
         }
 
         private void btnProcurarCadastro_Click(object sender, EventArgs e)
@@ -42,9 +43,9 @@ namespace MagSeguros
 
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void entrada_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace MagSeguros
 {
-    partial class MagTelaInicial
+    partial class Tela_login
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MagTelaInicial));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_login));
             this.frmInicial = new System.Windows.Forms.Label();
             this.txbUsuario = new System.Windows.Forms.TextBox();
             this.nome = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             // 
             this.txbUsuario.AccessibleName = "";
             this.txbUsuario.BackColor = System.Drawing.Color.LightGray;
-            this.txbUsuario.Location = new System.Drawing.Point(554, 210);
+            this.txbUsuario.Location = new System.Drawing.Point(554, 231);
             this.txbUsuario.Name = "txbUsuario";
             this.txbUsuario.Size = new System.Drawing.Size(154, 23);
             this.txbUsuario.TabIndex = 1;
@@ -66,7 +66,7 @@
             // 
             this.nome.AutoSize = true;
             this.nome.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nome.Location = new System.Drawing.Point(491, 213);
+            this.nome.Location = new System.Drawing.Point(554, 204);
             this.nome.Name = "nome";
             this.nome.Size = new System.Drawing.Size(57, 15);
             this.nome.TabIndex = 2;
@@ -87,7 +87,7 @@
             this.bttEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(252)))));
             this.bttEntrar.FlatAppearance.BorderColor = System.Drawing.SystemColors.Desktop;
             this.bttEntrar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bttEntrar.Location = new System.Drawing.Point(588, 315);
+            this.bttEntrar.Location = new System.Drawing.Point(588, 374);
             this.bttEntrar.Name = "bttEntrar";
             this.bttEntrar.Size = new System.Drawing.Size(82, 31);
             this.bttEntrar.TabIndex = 4;
@@ -99,7 +99,7 @@
             // 
             this.txbSenha.AutoSize = true;
             this.txbSenha.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbSenha.Location = new System.Drawing.Point(499, 257);
+            this.txbSenha.Location = new System.Drawing.Point(554, 274);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.Size = new System.Drawing.Size(49, 15);
             this.txbSenha.TabIndex = 5;
@@ -109,13 +109,13 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.LightGray;
-            this.textBox1.Location = new System.Drawing.Point(554, 254);
+            this.textBox1.Location = new System.Drawing.Point(554, 301);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(154, 23);
             this.textBox1.TabIndex = 6;
             this.textBox1.UseSystemPasswordChar = true;
             // 
-            // MagTelaInicial
+            // Tela_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,7 +133,8 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MagTelaInicial";
+            this.Name = "Tela_login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mag Seguros";
             this.ResumeLayout(false);
             this.PerformLayout();
