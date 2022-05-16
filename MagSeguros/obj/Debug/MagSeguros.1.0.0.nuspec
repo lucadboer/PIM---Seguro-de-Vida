@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MagSeguros</id>
+    <version>1.0.0</version>
+    <authors>MagSeguros</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="Npgsql" version="6.0.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Alunos\Desktop\PIM - Seguro de Vida\MagSeguros\bin\Debug\net6.0-windows\MagSeguros.runtimeconfig.json" target="lib\net6.0-windows7.0\MagSeguros.runtimeconfig.json" />
+    <file src="C:\Users\Alunos\Desktop\PIM - Seguro de Vida\MagSeguros\bin\Debug\net6.0-windows\MagSeguros.dll" target="lib\net6.0-windows7.0\MagSeguros.dll" />
+  </files>
+</package>

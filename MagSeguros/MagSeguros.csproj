@@ -9,6 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Tela_seguroVida - Cópia.cs" />
+    <Compile Remove="Tela_seguroVida - Cópia.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Tela_seguroVida - Cópia.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Npgsql" Version="6.0.4" />
   </ItemGroup>
 

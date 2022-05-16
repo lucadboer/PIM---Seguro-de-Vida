@@ -51,12 +51,18 @@ namespace MagSeguros
             //MessageBox.Show("Login");
             Tela_escolha tela_Escolha = new Tela_escolha();
             tela_Escolha.Show();
+            this.Hide();
 
         }
 
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void sairDoProgramaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

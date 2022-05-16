@@ -35,17 +35,34 @@ namespace MagSeguros
         private void button1_Click(object sender, EventArgs e)
         {
             TelaDeCadastro telaDeCadastro = new TelaDeCadastro();
-            telaDeCadastro.ShowDialog();
+            telaDeCadastro.Show();
+            this.Hide();
+
         }
 
         private void btnProcurarCadastro_Click(object sender, EventArgs e)
         {
+            Tela_procurarCadastro Tela_procurarCadastro = new Tela_procurarCadastro();
+            Tela_procurarCadastro.Show();
+            this.Hide();
 
         }
 
         private void entrada_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void sairDaContaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tela_login tela_Login = new Tela_login();
+            tela_Login.Show();
+            this.Hide();
+        }
+
+        private void fecharProgramaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

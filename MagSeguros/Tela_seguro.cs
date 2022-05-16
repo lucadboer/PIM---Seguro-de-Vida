@@ -16,5 +16,28 @@ namespace MagSeguros
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Tela_seguroVida tela_SeguroVida = new Tela_seguroVida();
+            tela_SeguroVida.Show();
+            this.Hide();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Tela_seguroDoencaGrave tela_SeguroDoencaGrave = new Tela_seguroDoencaGrave();
+            tela_SeguroDoencaGrave.Show();
+            this.Hide();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TelaDeCadastro telaDeCadastro = new TelaDeCadastro();
+            telaDeCadastro.Show();
+            this.Hide();
+        }
     }
 }

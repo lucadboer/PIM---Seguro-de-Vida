@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace MagSeguros
 {
@@ -43,6 +44,41 @@ namespace MagSeguros
         }
 
         private void bttCadastrar_Click(object sender, EventArgs e)
+        {
+            /*String sqlcnt = "Host=localhost;Database=teste01;Username=postgres;Password=dbadmin";
+            NpgsqlConnection con = new NpgsqlConnection(sqlcnt);
+            con.Open();
+            String sql = "insert into tb_cadastro (nome, cpf) values ('"+txtNome.Text+"','"+txtCPF.Text+"','"+txtIdade.Text+ "','"+txtGenero.Text+ "','"+txtEstadoCivil.Text+ "','"+txtTelefone.Text+ "','"+txtRenda.Text+"','" + txtOcupacaoAtual.Text;
+
+            NpgsqlCommand teste0 = new NpgsqlCommand(sql, con);
+            teste0.ExecuteNonQuery();
+            con.Close();*/
+            
+            //Tela_seguroVida tela_SeguroVida = new Tela_seguroVida(txtIdade.Text);
+
+            MessageBox.Show("Cadastrado com Sucesso");
+            Tela_seguro tela_Seguro = new Tela_seguro();
+            tela_Seguro.Show();
+            this.Hide();
+
+
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Tela_escolha tela_Escolha = new Tela_escolha();
+            tela_Escolha.Show();
+            this.Hide();
+        }
+
+        public void txtIdade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCPF_TextChanged(object sender, EventArgs e)
         {
 
         }

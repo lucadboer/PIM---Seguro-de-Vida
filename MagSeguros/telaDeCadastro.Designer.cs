@@ -54,6 +54,7 @@
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.bttCadastrar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // logo
@@ -174,6 +175,7 @@
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(145, 23);
             this.txtCPF.TabIndex = 17;
+            this.txtCPF.TextChanged += new System.EventHandler(this.txtCPF_TextChanged);
             // 
             // txtIdade
             // 
@@ -181,6 +183,7 @@
             this.txtIdade.Name = "txtIdade";
             this.txtIdade.Size = new System.Drawing.Size(53, 23);
             this.txtIdade.TabIndex = 18;
+            this.txtIdade.TextChanged += new System.EventHandler(this.txtIdade_TextChanged);
             // 
             // txtGenero
             // 
@@ -284,6 +287,7 @@
             this.bttCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(252)))));
             this.bttCadastrar.FlatAppearance.BorderColor = System.Drawing.SystemColors.Desktop;
             this.bttCadastrar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bttCadastrar.ForeColor = System.Drawing.Color.White;
             this.bttCadastrar.Location = new System.Drawing.Point(841, 401);
             this.bttCadastrar.Name = "bttCadastrar";
             this.bttCadastrar.Size = new System.Drawing.Size(82, 31);
@@ -292,13 +296,25 @@
             this.bttCadastrar.UseVisualStyleBackColor = false;
             this.bttCadastrar.Click += new System.EventHandler(this.bttCadastrar_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(28, 466);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(47, 41);
+            this.button2.TabIndex = 31;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // TelaDeCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MagSeguros.Properties.Resources.logo_pim;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(996, 537);
+            this.ClientSize = new System.Drawing.Size(1020, 537);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.bttCadastrar);
             this.Controls.Add(this.checkBox6);
             this.Controls.Add(this.checkBox5);
@@ -362,5 +378,6 @@
         private CheckBox checkBox5;
         private CheckBox checkBox6;
         private Button bttCadastrar;
+        private Button button2;
     }
 }

@@ -61,7 +61,7 @@
   <data name="btnCadastrarCliente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAFY9JREFUeF7tnf133NSZxx1eDoQkJMEkKSRNKLuUUt6habs0sIUlDd0AKZSFLmwp
+        DAAACwwBP0AiyAAAFY9JREFUeF7tnf133NSZxx1eDoQkJMEkKSRNKLuUUt6habs0sIUlDd0AKZSFLmwp
         L20IBU5ZwqGUA4TXQgllSUhsz9jxu+N3x44d27Hj+CWOHY9fZ+6VZAcKu4ees/1td/+D/WquELI0Hs9M
         5o408vM5z5mjka6kO7qfufdKo7nKYQQhARKLkAKJRUiBxCKkQGIRUiCxCCmQWIQUSCxCCiQWIQUSi5AC
         iUVIgcQipEBiEVIgsQgpkFiEFEgsQgokFiEFEouQAolFSGHBiRVhLBxhQ5OsNcT+3MPePcbf61Fe6lTu
@@ -241,6 +241,9 @@
         AElFTkSuQmCC
 </value>
   </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAOYAAAEAIADotAMAFgAAACgAAAAAAQAAzAEAAAEAIAAAAAAAAJgDABMLAAATCwAAAAAAAAAA
