@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vg+lNIXgRsPuw9NSVa7Jv/kK0iuXlkDREm/2yBmNQoBshgGkVJtcY4+8RR0b67iw9Bo5bAm0XD4pTE5jy2tRoA==",
+  "dgSpecHash": "Gtd1fGZHSoMevktlY3kUosNm7PH7YYcDyBaY+xE4hSu+wvK9fo5g9iI+s4WmIruyRhvvvrQnCem9HzElm0hJDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucah\\OneDrive\\Área de Trabalho\\PIM - Seguro de Vida\\MagSeguros\\MagSeguros.csproj",
+  "projectFilePath": "C:\\Users\\lucah\\OneDrive\\Área de Trabalho\\Nova pasta\\PIM - Seguro de Vida\\MagSeguros\\MagSeguros.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucah\\.nuget\\packages\\npgsql\\6.0.4\\npgsql.6.0.4.nupkg.sha512",
     "C:\\Users\\lucah\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"

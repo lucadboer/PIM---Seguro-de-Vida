@@ -81,9 +81,9 @@
             this.entrada.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.entrada.Location = new System.Drawing.Point(419, 82);
             this.entrada.Name = "entrada";
-            this.entrada.Size = new System.Drawing.Size(288, 24);
+            this.entrada.Size = new System.Drawing.Size(248, 24);
             this.entrada.TabIndex = 7;
-            this.entrada.Text = "Olá *****, escolha uma opção:";
+            this.entrada.Text = "Olá , escolha uma opção:";
             this.entrada.Click += new System.EventHandler(this.entrada_Click);
             // 
             // menuStrip1
@@ -109,14 +109,14 @@
             // sairDaContaToolStripMenuItem
             // 
             this.sairDaContaToolStripMenuItem.Name = "sairDaContaToolStripMenuItem";
-            this.sairDaContaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairDaContaToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.sairDaContaToolStripMenuItem.Text = "Sair da Conta";
             this.sairDaContaToolStripMenuItem.Click += new System.EventHandler(this.sairDaContaToolStripMenuItem_Click);
             // 
             // fecharProgramaToolStripMenuItem
             // 
             this.fecharProgramaToolStripMenuItem.Name = "fecharProgramaToolStripMenuItem";
-            this.fecharProgramaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fecharProgramaToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.fecharProgramaToolStripMenuItem.Text = "Fechar Programa";
             this.fecharProgramaToolStripMenuItem.Click += new System.EventHandler(this.fecharProgramaToolStripMenuItem_Click);
             // 

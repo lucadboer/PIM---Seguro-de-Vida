@@ -286,11 +286,11 @@
             // 
             this.bttCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(252)))));
             this.bttCadastrar.FlatAppearance.BorderColor = System.Drawing.SystemColors.Desktop;
-            this.bttCadastrar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bttCadastrar.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bttCadastrar.ForeColor = System.Drawing.Color.White;
             this.bttCadastrar.Location = new System.Drawing.Point(841, 401);
             this.bttCadastrar.Name = "bttCadastrar";
-            this.bttCadastrar.Size = new System.Drawing.Size(82, 31);
+            this.bttCadastrar.Size = new System.Drawing.Size(97, 46);
             this.bttCadastrar.TabIndex = 30;
             this.bttCadastrar.Text = "Cadastrar";
             this.bttCadastrar.UseVisualStyleBackColor = false;
@@ -346,6 +346,7 @@
             this.Name = "TelaDeCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mag Seguros";
+            this.Load += new System.EventHandler(this.TelaDeCadastro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

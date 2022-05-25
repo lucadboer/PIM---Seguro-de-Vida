@@ -16,15 +16,22 @@ namespace MagSeguros
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click_2(object sender, EventArgs e)
         {
-
+            double parcela = Pessoa.Idade / 3.7;
+            label12.Text = "A parcela do cliente será de R$ " + parcela.ToString("F2");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            
+            double parcela = (Pessoa.Idade / 3.7) * 2;
+            label12.Text = "A parcela do cliente será de R$ " + parcela.ToString("F2");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double parcela = (Pessoa.Idade / 3.7) * 3;
+            label12.Text = "A parcela do cliente será de R$ " + parcela.ToString("F2");
         }
 
         private void button4_Click(object sender, EventArgs e)

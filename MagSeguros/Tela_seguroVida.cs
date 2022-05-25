@@ -15,7 +15,6 @@ namespace MagSeguros
         public Tela_seguroVida()
         {
             InitializeComponent();
-            
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -30,14 +29,33 @@ namespace MagSeguros
             this.Hide();        
         }
 
-        private void Tela_seguroVida_Load(object sender, EventArgs e)
-        {
-            
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //label12.Text = "A parcela do cliente será de R$ " + (idade / 2.5);
+          double parcela = Pessoa.Idade / 2.5;
+          label12.Text = "A parcela do cliente será de R$ " + parcela.ToString("F2");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double parcela = (Pessoa.Idade / 2.5) * 2;
+            label12.Text = "A parcela do cliente será de R$ " + parcela.ToString("F2");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+ 
+        }
+
+        private void Tela_seguroVida_Load(object sender, EventArgs e)
+        {
+    
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            double parcela = (Pessoa.Idade / 2.5) * 3;
+            label12.Text = "A parcela do cliente será de R$ " + parcela.ToString("F2");
         }
     }
 }

@@ -31,27 +31,43 @@ namespace MagSeguros
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
-            string namess = Convert.ToString(txbUsuario);
 
         }
 
         private void bttEntrar_Click(object sender, EventArgs e)
-        {   
+        {
 
             //NpgsqlConnection conn = new NpgsqlConnection(connString);
             //conn.Open();
 
-           // NpgsqlConnection cmd = new NpgsqlConnection(connString);
+            // NpgsqlConnection cmd = new NpgsqlConnection(connString);
 
             // realizar querys
 
             //String usuario = txbUsuario.Text;
             //String senha = txbSenha.Text;
-            
+
             //MessageBox.Show("Login");
-            Tela_escolha tela_Escolha = new Tela_escolha();
-            tela_Escolha.Show();
-            this.Hide();
+
+            if (txbUsuario.Text == "")
+            {
+                MessageBox.Show("Você não digitou o seu usuário", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            if (txbSenha.Text == "")
+            {
+                MessageBox.Show("Você não digitou a sua senha", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            if (txbUsuario.Text != "" && txbSenha.Text != "")
+            {
+                Pessoa.Usuario = txbUsuario.Text;
+                Pessoa.Senha = txbSenha.Text;
+
+                Tela_escolha tela_Escolha = new Tela_escolha();
+                tela_Escolha.Show();
+                this.Hide();
+            }
 
         }
 
@@ -63,6 +79,11 @@ namespace MagSeguros
         private void sairDoProgramaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void Tela_login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -34,8 +34,8 @@
             this.nome = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.Label();
             this.bttEntrar = new System.Windows.Forms.Button();
-            this.txbSenha = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.senha = new System.Windows.Forms.Label();
+            this.txbSenha = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairDoProgramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -100,25 +100,25 @@
             this.bttEntrar.UseVisualStyleBackColor = false;
             this.bttEntrar.Click += new System.EventHandler(this.bttEntrar_Click);
             // 
+            // senha
+            // 
+            this.senha.AutoSize = true;
+            this.senha.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.senha.Location = new System.Drawing.Point(426, 238);
+            this.senha.Name = "senha";
+            this.senha.Size = new System.Drawing.Size(49, 15);
+            this.senha.TabIndex = 5;
+            this.senha.Text = "Senha :";
+            this.senha.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // txbSenha
             // 
-            this.txbSenha.AutoSize = true;
-            this.txbSenha.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbSenha.Location = new System.Drawing.Point(426, 238);
+            this.txbSenha.BackColor = System.Drawing.Color.LightGray;
+            this.txbSenha.Location = new System.Drawing.Point(426, 265);
             this.txbSenha.Name = "txbSenha";
-            this.txbSenha.Size = new System.Drawing.Size(49, 15);
-            this.txbSenha.TabIndex = 5;
-            this.txbSenha.Text = "Senha :";
-            this.txbSenha.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.LightGray;
-            this.textBox1.Location = new System.Drawing.Point(426, 265);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 23);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.UseSystemPasswordChar = true;
+            this.txbSenha.Size = new System.Drawing.Size(154, 23);
+            this.txbSenha.TabIndex = 6;
+            this.txbSenha.UseSystemPasswordChar = true;
             // 
             // menuStrip1
             // 
@@ -142,7 +142,7 @@
             // sairDoProgramaToolStripMenuItem
             // 
             this.sairDoProgramaToolStripMenuItem.Name = "sairDoProgramaToolStripMenuItem";
-            this.sairDoProgramaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairDoProgramaToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.sairDoProgramaToolStripMenuItem.Text = "Sair do Programa";
             this.sairDoProgramaToolStripMenuItem.Click += new System.EventHandler(this.sairDoProgramaToolStripMenuItem_Click);
             // 
@@ -154,8 +154,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(683, 473);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txbSenha);
+            this.Controls.Add(this.senha);
             this.Controls.Add(this.bttEntrar);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.nome);
@@ -169,6 +169,7 @@
             this.Name = "Tela_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mag Seguros";
+            this.Load += new System.EventHandler(this.Tela_login_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -183,8 +184,8 @@
         private Label nome;
         private Label logo;
         private Button bttEntrar;
-        private Label txbSenha;
-        private TextBox textBox1;
+        private Label senha;
+        private TextBox txbSenha;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem opçõesToolStripMenuItem;
         private ToolStripMenuItem sairDoProgramaToolStripMenuItem;

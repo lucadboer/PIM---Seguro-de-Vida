@@ -17,7 +17,6 @@ namespace MagSeguros
         {
             InitializeComponent();
         }
-
         private void label9_Click(object sender, EventArgs e)
         {
 
@@ -53,18 +52,16 @@ namespace MagSeguros
             NpgsqlCommand teste0 = new NpgsqlCommand(sql, con);
             teste0.ExecuteNonQuery();
             con.Close();*/
-            
-            //Tela_seguroVida tela_SeguroVida = new Tela_seguroVida(txtIdade.Text);
 
-            MessageBox.Show("Cadastrado com Sucesso");
+            Pessoa.Idade = Convert.ToInt32(txtIdade.Text);
+
+            MessageBox.Show("Cadastrado com Sucesso","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
             Tela_seguro tela_Seguro = new Tela_seguro();
             tela_Seguro.Show();
             this.Hide();
 
-
-
-
         }
+    
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -75,10 +72,14 @@ namespace MagSeguros
 
         public void txtIdade_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void txtCPF_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TelaDeCadastro_Load(object sender, EventArgs e)
         {
 
         }
