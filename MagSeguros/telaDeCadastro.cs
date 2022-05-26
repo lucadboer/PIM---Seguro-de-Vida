@@ -53,12 +53,20 @@ namespace MagSeguros
             teste0.ExecuteNonQuery();
             con.Close();*/
 
-            Pessoa.Idade = Convert.ToInt32(txtIdade.Text);
+            if (txtNome.Text == "" || txtCPF.Text == "" || txtIdade.Text == ""
+                && txtGenero.Text == "" || txtEstadoCivil.Text == "" || txtRenda.Text == "" || txtOcupacaoAtual.Text == "")
+            {
+                MessageBox.Show("Todos os campos precisam ser preenchidos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                Pessoa.Idade = Convert.ToInt32(txtIdade.Text);
 
-            MessageBox.Show("Cadastrado com Sucesso","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            Tela_seguro tela_Seguro = new Tela_seguro();
-            tela_Seguro.Show();
-            this.Hide();
+                MessageBox.Show("Cadastrado com Sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Tela_seguro tela_Seguro = new Tela_seguro();
+                tela_Seguro.Show();
+                this.Hide();
+            }
 
         }
     
@@ -82,6 +90,20 @@ namespace MagSeguros
         private void TelaDeCadastro_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtNome.Clear();
+            txtIdade.Clear();
+            txtCPF.Clear();
+            txtGenero.Clear();
+            txtEstadoCivil.Clear();
+            txtTelefone.Clear();
+            txtRenda.Clear();
+            txtOcupacaoAtual.Clear();
+            //comboDoença.Clear();
+            txtNome.Focus();
         }
     }
 }

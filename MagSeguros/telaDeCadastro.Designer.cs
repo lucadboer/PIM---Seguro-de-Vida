@@ -47,7 +47,7 @@
             this.txtEstadoCivil = new System.Windows.Forms.TextBox();
             this.txtOcupacaoAtual = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboDoença = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -55,6 +55,7 @@
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.bttCadastrar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // logo
@@ -218,18 +219,18 @@
             this.label9.Text = "Possui alguma doença?";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // comboBox1
+            // comboDoença
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboDoença.FormattingEnabled = true;
+            this.comboDoença.Items.AddRange(new object[] {
             "Sim",
             "Não"});
-            this.comboBox1.Location = new System.Drawing.Point(800, 226);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(138, 23);
-            this.comboBox1.TabIndex = 23;
-            this.comboBox1.Text = "Selecione uma opção";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboDoença.Location = new System.Drawing.Point(800, 226);
+            this.comboDoença.Name = "comboDoença";
+            this.comboDoença.Size = new System.Drawing.Size(138, 23);
+            this.comboDoença.TabIndex = 23;
+            this.comboDoença.Text = "Selecione uma opção";
+            this.comboDoença.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // checkBox1
             // 
@@ -288,7 +289,7 @@
             this.bttCadastrar.FlatAppearance.BorderColor = System.Drawing.SystemColors.Desktop;
             this.bttCadastrar.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bttCadastrar.ForeColor = System.Drawing.Color.White;
-            this.bttCadastrar.Location = new System.Drawing.Point(841, 401);
+            this.bttCadastrar.Location = new System.Drawing.Point(841, 407);
             this.bttCadastrar.Name = "bttCadastrar";
             this.bttCadastrar.Size = new System.Drawing.Size(97, 46);
             this.bttCadastrar.TabIndex = 30;
@@ -300,12 +301,25 @@
             // 
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(28, 466);
+            this.button2.Location = new System.Drawing.Point(24, 472);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(47, 41);
             this.button2.TabIndex = 31;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.White;
+            this.btnLimpar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpar.BackgroundImage")));
+            this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.No;
+            this.btnLimpar.Location = new System.Drawing.Point(962, 12);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(46, 38);
+            this.btnLimpar.TabIndex = 32;
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.button1_Click);
             // 
             // TelaDeCadastro
             // 
@@ -314,6 +328,7 @@
             this.BackgroundImage = global::MagSeguros.Properties.Resources.logo_pim;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1020, 537);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.bttCadastrar);
             this.Controls.Add(this.checkBox6);
@@ -321,7 +336,7 @@
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboDoença);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtOcupacaoAtual);
             this.Controls.Add(this.txtEstadoCivil);
@@ -372,7 +387,7 @@
         private TextBox txtEstadoCivil;
         private TextBox txtOcupacaoAtual;
         private Label label9;
-        private ComboBox comboBox1;
+        private ComboBox comboDoença;
         private CheckBox checkBox1;
         private CheckBox checkBox2;
         private CheckBox checkBox3;
@@ -380,5 +395,6 @@
         private CheckBox checkBox6;
         private Button bttCadastrar;
         private Button button2;
+        private Button btnLimpar;
     }
 }

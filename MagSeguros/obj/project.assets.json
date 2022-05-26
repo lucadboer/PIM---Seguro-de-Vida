@@ -90,11 +90,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucah\\OneDrive\\Área de Trabalho\\Nova pasta\\PIM - Seguro de Vida\\MagSeguros\\MagSeguros.csproj",
+      "projectUniqueName": "C:\\Users\\lucah\\OneDrive\\Área de Trabalho\\PIM - Seguro de Vida\\MagSeguros\\MagSeguros.csproj",
       "projectName": "MagSeguros",
-      "projectPath": "C:\\Users\\lucah\\OneDrive\\Área de Trabalho\\Nova pasta\\PIM - Seguro de Vida\\MagSeguros\\MagSeguros.csproj",
+      "projectPath": "C:\\Users\\lucah\\OneDrive\\Área de Trabalho\\PIM - Seguro de Vida\\MagSeguros\\MagSeguros.csproj",
       "packagesPath": "C:\\Users\\lucah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucah\\OneDrive\\Área de Trabalho\\Nova pasta\\PIM - Seguro de Vida\\MagSeguros\\obj\\",
+      "outputPath": "C:\\Users\\lucah\\OneDrive\\Área de Trabalho\\PIM - Seguro de Vida\\MagSeguros\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

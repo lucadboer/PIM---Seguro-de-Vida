@@ -49,15 +49,21 @@ namespace MagSeguros
 
             //MessageBox.Show("Login");
 
-            if (txbUsuario.Text == "")
+            if (txbSenha.Text == "" & txbUsuario.Text == "")
+            {
+                MessageBox.Show("Digite o seu usuário e senha para logar", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            else if (txbUsuario.Text == "")
             {
                 MessageBox.Show("Você não digitou o seu usuário", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
-            if (txbSenha.Text == "")
+            else if (txbSenha.Text == "")
             {
                 MessageBox.Show("Você não digitou a sua senha", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+
 
             if (txbUsuario.Text != "" && txbSenha.Text != "")
             {
