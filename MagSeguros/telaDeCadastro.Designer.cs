@@ -56,6 +56,7 @@
             this.bttCadastrar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // logo
@@ -151,61 +152,68 @@
             // txtNome
             // 
             this.txtNome.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNome.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNome.Location = new System.Drawing.Point(508, 66);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(229, 23);
+            this.txtNome.Size = new System.Drawing.Size(229, 22);
             this.txtNome.TabIndex = 14;
             // 
             // txtTelefone
             // 
+            this.txtTelefone.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtTelefone.Location = new System.Drawing.Point(508, 440);
             this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(108, 23);
+            this.txtTelefone.Size = new System.Drawing.Size(108, 22);
             this.txtTelefone.TabIndex = 15;
             // 
             // txtRenda
             // 
+            this.txtRenda.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtRenda.Location = new System.Drawing.Point(800, 66);
             this.txtRenda.Name = "txtRenda";
-            this.txtRenda.Size = new System.Drawing.Size(123, 23);
+            this.txtRenda.Size = new System.Drawing.Size(123, 22);
             this.txtRenda.TabIndex = 16;
             // 
             // txtCPF
             // 
             this.txtCPF.Location = new System.Drawing.Point(508, 137);
             this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(145, 23);
+            this.txtCPF.Size = new System.Drawing.Size(89, 23);
             this.txtCPF.TabIndex = 17;
             this.txtCPF.TextChanged += new System.EventHandler(this.txtCPF_TextChanged);
             // 
             // txtIdade
             // 
+            this.txtIdade.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtIdade.Location = new System.Drawing.Point(508, 206);
             this.txtIdade.Name = "txtIdade";
-            this.txtIdade.Size = new System.Drawing.Size(53, 23);
+            this.txtIdade.Size = new System.Drawing.Size(53, 22);
             this.txtIdade.TabIndex = 18;
             this.txtIdade.TextChanged += new System.EventHandler(this.txtIdade_TextChanged);
             // 
             // txtGenero
             // 
+            this.txtGenero.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtGenero.Location = new System.Drawing.Point(508, 278);
             this.txtGenero.Name = "txtGenero";
-            this.txtGenero.Size = new System.Drawing.Size(108, 23);
+            this.txtGenero.Size = new System.Drawing.Size(108, 22);
             this.txtGenero.TabIndex = 19;
             // 
             // txtEstadoCivil
             // 
+            this.txtEstadoCivil.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEstadoCivil.Location = new System.Drawing.Point(508, 358);
             this.txtEstadoCivil.Name = "txtEstadoCivil";
-            this.txtEstadoCivil.Size = new System.Drawing.Size(108, 23);
+            this.txtEstadoCivil.Size = new System.Drawing.Size(108, 22);
             this.txtEstadoCivil.TabIndex = 20;
             this.txtEstadoCivil.TextChanged += new System.EventHandler(this.txtEstadoCivil_TextChanged);
             // 
             // txtOcupacaoAtual
             // 
+            this.txtOcupacaoAtual.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtOcupacaoAtual.Location = new System.Drawing.Point(800, 137);
             this.txtOcupacaoAtual.Name = "txtOcupacaoAtual";
-            this.txtOcupacaoAtual.Size = new System.Drawing.Size(120, 23);
+            this.txtOcupacaoAtual.Size = new System.Drawing.Size(120, 22);
             this.txtOcupacaoAtual.TabIndex = 21;
             // 
             // label9
@@ -321,6 +329,16 @@
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.maskedTextBox1.Location = new System.Drawing.Point(508, 137);
+            this.maskedTextBox1.Mask = "999,999,999-99";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(136, 25);
+            this.maskedTextBox1.TabIndex = 33;
+            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            // 
             // TelaDeCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -328,6 +346,7 @@
             this.BackgroundImage = global::MagSeguros.Properties.Resources.logo_pim;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1020, 537);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.bttCadastrar);
@@ -396,5 +415,6 @@
         private Button bttCadastrar;
         private Button button2;
         private Button btnLimpar;
+        private MaskedTextBox maskedTextBox1;
     }
 }

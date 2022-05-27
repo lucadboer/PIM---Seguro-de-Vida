@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
+using System.Data.SqlClient;
 
 namespace MagSeguros
 {
@@ -44,32 +45,46 @@ namespace MagSeguros
 
         private void bttCadastrar_Click(object sender, EventArgs e)
         {
-            /*String sqlcnt = "Host=localhost;Database=teste01;Username=postgres;Password=dbadmin";
-            NpgsqlConnection con = new NpgsqlConnection(sqlcnt);
-            con.Open();
-            String sql = "insert into tb_cadastro (nome, cpf) values ('"+txtNome.Text+"','"+txtCPF.Text+"','"+txtIdade.Text+ "','"+txtGenero.Text+ "','"+txtEstadoCivil.Text+ "','"+txtTelefone.Text+ "','"+txtRenda.Text+"','" + txtOcupacaoAtual.Text;
-
-            NpgsqlCommand teste0 = new NpgsqlCommand(sql, con);
-            teste0.ExecuteNonQuery();
-            con.Close();*/
+            txtCPF.Text = maskedTextBox1.Text;
 
             if (txtNome.Text == "" || txtCPF.Text == "" || txtIdade.Text == ""
-                && txtGenero.Text == "" || txtEstadoCivil.Text == "" || txtRenda.Text == "" || txtOcupacaoAtual.Text == "")
+                && txtGenero.Text == "" || txtEstadoCivil.Text == "" || txtRenda.Text == "" || txtOcupacaoAtual.Text == "" || txtIdade.Text != null)
             {
                 MessageBox.Show("Todos os campos precisam ser preenchidos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
-                Pessoa.Idade = Convert.ToInt32(txtIdade.Text);
+                try
+                {
+                    String sqlcnt = "Host=localhost;Port=5432;Database=teste_pim;Username=postgres;Password=686798";
 
-                MessageBox.Show("Cadastrado com Sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Tela_seguro tela_Seguro = new Tela_seguro();
-                tela_Seguro.Show();
-                this.Hide();
+                    NpgsqlConnection postgre_cnt = new NpgsqlConnection(sqlcnt);
+                    postgre_cnt.Open();
+
+                    String sql = "insert into tb_cadastro (nome, cpf, idade, genero, estadocivil, telefone, renda, ocupacaoatual) values ('" + txtNome.Text + "','" + txtCPF.Text + "','" + txtIdade.Text + "','" + txtGenero.Text + "','" + txtEstadoCivil.Text + "','" + txtTelefone.Text + "','" + txtRenda.Text + "','" + txtOcupacaoAtual.Text + "')";
+
+                    NpgsqlCommand postgre_cmd = new NpgsqlCommand(sql, postgre_cnt);
+
+                    postgre_cmd.ExecuteNonQuery();
+                    postgre_cnt.Close();
+
+
+                    Pessoa.Idade = Convert.ToInt32(txtIdade.Text);
+
+                    MessageBox.Show("Cadastrado com Sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Tela_seguro tela_Seguro = new Tela_seguro();
+                    tela_Seguro.Show();
+                    this.Hide();
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show("Test" + erro);
+                }
+               // Pessoa.CPF = txtCPF.Text;
             }
 
         }
-    
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -104,6 +119,10 @@ namespace MagSeguros
             txtOcupacaoAtual.Clear();
             //comboDoença.Clear();
             txtNome.Focus();
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
         }
     }
 }

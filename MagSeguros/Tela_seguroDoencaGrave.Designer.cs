@@ -62,7 +62,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(24, 457);
+            this.button4.Location = new System.Drawing.Point(22, 447);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(47, 41);
             this.button4.TabIndex = 24;

@@ -7,6 +7,9 @@
     <Compile Update="TelaDeCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Tela_listarCadastros.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Tela_login.cs">
       <SubType>Form</SubType>
     </Compile>

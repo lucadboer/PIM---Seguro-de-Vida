@@ -37,6 +37,7 @@
             this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairDaContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharProgramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnListarCadastro = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,10 +55,10 @@
             // 
             this.btnCadastrarCliente.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCadastrarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrarCliente.Image")));
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(419, 182);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(471, 144);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
             this.btnCadastrarCliente.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCadastrarCliente.Size = new System.Drawing.Size(194, 198);
+            this.btnCadastrarCliente.Size = new System.Drawing.Size(154, 154);
             this.btnCadastrarCliente.TabIndex = 5;
             this.btnCadastrarCliente.UseVisualStyleBackColor = false;
             this.btnCadastrarCliente.Click += new System.EventHandler(this.button1_Click);
@@ -66,10 +67,10 @@
             // 
             this.btnProcurarCadastro.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnProcurarCadastro.Image = ((System.Drawing.Image)(resources.GetObject("btnProcurarCadastro.Image")));
-            this.btnProcurarCadastro.Location = new System.Drawing.Point(682, 182);
+            this.btnProcurarCadastro.Location = new System.Drawing.Point(735, 144);
             this.btnProcurarCadastro.Name = "btnProcurarCadastro";
             this.btnProcurarCadastro.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnProcurarCadastro.Size = new System.Drawing.Size(194, 198);
+            this.btnProcurarCadastro.Size = new System.Drawing.Size(154, 154);
             this.btnProcurarCadastro.TabIndex = 6;
             this.btnProcurarCadastro.UseVisualStyleBackColor = false;
             this.btnProcurarCadastro.Click += new System.EventHandler(this.btnProcurarCadastro_Click);
@@ -93,7 +94,7 @@
             this.opçõesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1012, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(980, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -120,13 +121,25 @@
             this.fecharProgramaToolStripMenuItem.Text = "Fechar Programa";
             this.fecharProgramaToolStripMenuItem.Click += new System.EventHandler(this.fecharProgramaToolStripMenuItem_Click);
             // 
+            // btnListarCadastro
+            // 
+            this.btnListarCadastro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnListarCadastro.BackgroundImage")));
+            this.btnListarCadastro.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnListarCadastro.Location = new System.Drawing.Point(608, 341);
+            this.btnListarCadastro.Name = "btnListarCadastro";
+            this.btnListarCadastro.Size = new System.Drawing.Size(154, 154);
+            this.btnListarCadastro.TabIndex = 9;
+            this.btnListarCadastro.UseVisualStyleBackColor = true;
+            this.btnListarCadastro.Click += new System.EventHandler(this.btnListarCadastro_Click);
+            // 
             // Tela_escolha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MagSeguros.Properties.Resources.logo_pim;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1012, 537);
+            this.ClientSize = new System.Drawing.Size(980, 544);
+            this.Controls.Add(this.btnListarCadastro);
             this.Controls.Add(this.entrada);
             this.Controls.Add(this.btnProcurarCadastro);
             this.Controls.Add(this.btnCadastrarCliente);
@@ -155,5 +168,6 @@
         private ToolStripMenuItem opçõesToolStripMenuItem;
         private ToolStripMenuItem sairDaContaToolStripMenuItem;
         private ToolStripMenuItem fecharProgramaToolStripMenuItem;
+        private Button btnListarCadastro;
     }
 }

@@ -64,5 +64,12 @@ namespace MagSeguros
         {
             Environment.Exit(0);
         }
+
+        private void btnListarCadastro_Click(object sender, EventArgs e)
+        {
+            Tela_listarCadastros tela_ListarCadastros = new Tela_listarCadastros();
+            tela_ListarCadastros.Show();
+            this.Hide();
+        }
     }
 }
