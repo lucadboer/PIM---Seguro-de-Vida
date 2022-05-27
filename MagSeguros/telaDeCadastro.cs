@@ -46,9 +46,11 @@ namespace MagSeguros
         private void bttCadastrar_Click(object sender, EventArgs e)
         {
             txtCPF.Text = maskedTextBox1.Text;
+            txtTelefone.Text = maskedTextBox2.Text;
+
 
             if (txtNome.Text == "" || txtCPF.Text == "" || txtIdade.Text == ""
-                && txtGenero.Text == "" || txtEstadoCivil.Text == "" || txtRenda.Text == "" || txtOcupacaoAtual.Text == "" || txtIdade.Text != null)
+                && txtGenero.Text == "" || txtEstadoCivil.Text == "" || txtRenda.Text == "" || txtOcupacaoAtual.Text == "")
             {
                 MessageBox.Show("Todos os campos precisam ser preenchidos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -56,31 +58,40 @@ namespace MagSeguros
             {
                 try
                 {
-                    String sqlcnt = "Host=localhost;Port=5432;Database=teste_pim;Username=postgres;Password=686798";
+                    int aux = Convert.ToInt32(txtIdade.Text);
+                    if (aux is int)
+                    {
+                        String sqlcnt = "Host=localhost;Port=5432;Database=teste_pim;Username=postgres;Password=686798";
 
-                    NpgsqlConnection postgre_cnt = new NpgsqlConnection(sqlcnt);
-                    postgre_cnt.Open();
+                        NpgsqlConnection postgre_cnt = new NpgsqlConnection(sqlcnt);
+                        postgre_cnt.Open();
 
-                    String sql = "insert into tb_cadastro (nome, cpf, idade, genero, estadocivil, telefone, renda, ocupacaoatual) values ('" + txtNome.Text + "','" + txtCPF.Text + "','" + txtIdade.Text + "','" + txtGenero.Text + "','" + txtEstadoCivil.Text + "','" + txtTelefone.Text + "','" + txtRenda.Text + "','" + txtOcupacaoAtual.Text + "')";
+                        String sql = "insert into tb_cadastro (nome, cpf, idade, genero, estadocivil, telefone, renda, ocupacaoatual) values ('" + txtNome.Text + "','" + txtCPF.Text + "','" + txtIdade.Text + "','" + txtGenero.Text + "','" + txtEstadoCivil.Text + "','" + txtTelefone.Text + "','" + txtRenda.Text + "','" + txtOcupacaoAtual.Text + "')";
 
-                    NpgsqlCommand postgre_cmd = new NpgsqlCommand(sql, postgre_cnt);
+                        NpgsqlCommand postgre_cmd = new NpgsqlCommand(sql, postgre_cnt);
 
-                    postgre_cmd.ExecuteNonQuery();
-                    postgre_cnt.Close();
+                        postgre_cmd.ExecuteNonQuery();
+                        postgre_cnt.Close();
 
 
-                    Pessoa.Idade = Convert.ToInt32(txtIdade.Text);
+                        Pessoa.Idade = Convert.ToInt32(txtIdade.Text);
 
-                    MessageBox.Show("Cadastrado com Sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Tela_seguro tela_Seguro = new Tela_seguro();
-                    tela_Seguro.Show();
-                    this.Hide();
+                        MessageBox.Show("Cadastrado com Sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Tela_seguro tela_Seguro = new Tela_seguro();
+                        tela_Seguro.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("A idade precisa ser um número", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+
                 }
                 catch (Exception erro)
                 {
-                    MessageBox.Show("Test" + erro);
+                    MessageBox.Show("CPF já cadastrado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-               // Pessoa.CPF = txtCPF.Text;
+                // Pessoa.CPF = txtCPF.Text;
             }
 
         }
@@ -122,6 +133,15 @@ namespace MagSeguros
         }
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+        }
+
+        private void txtTelefone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
         }
     }

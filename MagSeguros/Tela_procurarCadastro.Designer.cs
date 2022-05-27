@@ -52,15 +52,17 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(475, 44);
+            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(252)))));
+            this.label1.Location = new System.Drawing.Point(473, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(275, 22);
+            this.label1.Size = new System.Drawing.Size(297, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Procurar cadastro do cliente";
             // 
@@ -68,7 +70,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(475, 116);
+            this.label2.Location = new System.Drawing.Point(473, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(141, 17);
             this.label2.TabIndex = 1;
@@ -76,7 +78,7 @@
             // 
             // txt_consulta_cpf
             // 
-            this.txt_consulta_cpf.Location = new System.Drawing.Point(475, 154);
+            this.txt_consulta_cpf.Location = new System.Drawing.Point(475, 156);
             this.txt_consulta_cpf.Name = "txt_consulta_cpf";
             this.txt_consulta_cpf.Size = new System.Drawing.Size(108, 23);
             this.txt_consulta_cpf.TabIndex = 2;
@@ -85,7 +87,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(475, 213);
+            this.label3.Location = new System.Drawing.Point(473, 214);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 18);
             this.label3.TabIndex = 4;
@@ -114,95 +116,108 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(252)))));
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(622, 151);
+            this.button1.Location = new System.Drawing.Point(615, 151);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 31);
+            this.button1.Size = new System.Drawing.Size(35, 31);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Procurar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(773, 158);
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(669, 151);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(35, 31);
             this.button3.TabIndex = 8;
-            this.button3.Text = "Deletar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // txtOcupacaoAtual
             // 
-            this.txtOcupacaoAtual.BackColor = System.Drawing.Color.LightBlue;
+            this.txtOcupacaoAtual.BackColor = System.Drawing.Color.White;
             this.txtOcupacaoAtual.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOcupacaoAtual.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtOcupacaoAtual.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtOcupacaoAtual.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtOcupacaoAtual.Location = new System.Drawing.Point(782, 448);
+            this.txtOcupacaoAtual.Multiline = true;
             this.txtOcupacaoAtual.Name = "txtOcupacaoAtual";
-            this.txtOcupacaoAtual.Size = new System.Drawing.Size(120, 19);
+            this.txtOcupacaoAtual.Size = new System.Drawing.Size(180, 23);
             this.txtOcupacaoAtual.TabIndex = 35;
             // 
             // txtEstadoCivil
             // 
-            this.txtEstadoCivil.BackColor = System.Drawing.Color.LightBlue;
+            this.txtEstadoCivil.BackColor = System.Drawing.Color.White;
             this.txtEstadoCivil.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEstadoCivil.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtEstadoCivil.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtEstadoCivil.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtEstadoCivil.Location = new System.Drawing.Point(782, 364);
             this.txtEstadoCivil.Name = "txtEstadoCivil";
-            this.txtEstadoCivil.Size = new System.Drawing.Size(108, 19);
+            this.txtEstadoCivil.Size = new System.Drawing.Size(145, 19);
             this.txtEstadoCivil.TabIndex = 34;
             // 
             // txtGenero
             // 
-            this.txtGenero.BackColor = System.Drawing.Color.LightBlue;
+            this.txtGenero.BackColor = System.Drawing.Color.White;
             this.txtGenero.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtGenero.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtGenero.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtGenero.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtGenero.Location = new System.Drawing.Point(475, 448);
             this.txtGenero.Name = "txtGenero";
-            this.txtGenero.Size = new System.Drawing.Size(108, 19);
+            this.txtGenero.Size = new System.Drawing.Size(139, 19);
             this.txtGenero.TabIndex = 33;
             // 
             // txtIdade
             // 
-            this.txtIdade.BackColor = System.Drawing.Color.LightBlue;
+            this.txtIdade.BackColor = System.Drawing.Color.White;
             this.txtIdade.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdade.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtIdade.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtIdade.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtIdade.Location = new System.Drawing.Point(475, 364);
             this.txtIdade.Name = "txtIdade";
-            this.txtIdade.Size = new System.Drawing.Size(53, 19);
+            this.txtIdade.Size = new System.Drawing.Size(34, 19);
             this.txtIdade.TabIndex = 32;
             // 
             // txtRenda
             // 
-            this.txtRenda.BackColor = System.Drawing.Color.LightBlue;
+            this.txtRenda.BackColor = System.Drawing.Color.White;
             this.txtRenda.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRenda.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtRenda.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtRenda.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRenda.Location = new System.Drawing.Point(475, 517);
             this.txtRenda.Name = "txtRenda";
-            this.txtRenda.Size = new System.Drawing.Size(123, 19);
+            this.txtRenda.Size = new System.Drawing.Size(160, 19);
             this.txtRenda.TabIndex = 31;
+            this.txtRenda.TextChanged += new System.EventHandler(this.txtRenda_TextChanged);
             // 
             // txtTelefone
             // 
-            this.txtTelefone.BackColor = System.Drawing.Color.LightBlue;
+            this.txtTelefone.BackColor = System.Drawing.Color.White;
             this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefone.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTelefone.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTelefone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtTelefone.Location = new System.Drawing.Point(782, 287);
             this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(108, 19);
+            this.txtTelefone.Size = new System.Drawing.Size(162, 19);
             this.txtTelefone.TabIndex = 30;
+            this.txtTelefone.TextChanged += new System.EventHandler(this.txtTelefone_TextChanged);
             // 
             // txtNome
             // 
-            this.txtNome.BackColor = System.Drawing.Color.LightBlue;
+            this.txtNome.BackColor = System.Drawing.Color.White;
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNome.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtNome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNome.Location = new System.Drawing.Point(475, 287);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(229, 19);
+            this.txtNome.Size = new System.Drawing.Size(251, 19);
             this.txtNome.TabIndex = 29;
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
@@ -286,6 +301,16 @@
             this.maskedTextBox1.TabIndex = 36;
             this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.maskedTextBox2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.maskedTextBox2.Location = new System.Drawing.Point(782, 284);
+            this.maskedTextBox2.Mask = "(99) 00000-0000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(162, 19);
+            this.maskedTextBox2.TabIndex = 37;
+            // 
             // Tela_procurarCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -293,6 +318,7 @@
             this.BackgroundImage = global::MagSeguros.Properties.Resources.logo_pim;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1012, 582);
+            this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.txtOcupacaoAtual);
             this.Controls.Add(this.txtEstadoCivil);
@@ -319,7 +345,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tela_procurarCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mag Seguros";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.Tela_procurarCadastro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,7 +360,6 @@
         private Label label3;
         private Label logo;
         private Button button2;
-        private Button button1;
         private Button button3;
         private TextBox txtOcupacaoAtual;
         private TextBox txtEstadoCivil;
@@ -350,5 +376,7 @@
         private Label label9;
         private Label label10;
         private MaskedTextBox maskedTextBox1;
+        public Button button1;
+        private MaskedTextBox maskedTextBox2;
     }
 }

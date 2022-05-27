@@ -24,19 +24,21 @@ namespace MagSeguros
 
             try
             {
-                String sqlcnt = "Host=localhost;Port=5432;Database=teste_pim;Username=postgres;Password=686798";
-                NpgsqlConnection postgre_cnt = new NpgsqlConnection(sqlcnt);
-                postgre_cnt.Open();
-                String sql = "select nome, idade, genero, estadocivil, telefone, renda, ocupacaoatual from tb_cadastro where cpf = ('" + txt_consulta_cpf.Text + "')";
+                if (txt_consulta_cpf.Text != "" && txt_consulta_cpf.Text.Length == 14)
+                {
+                    String sqlcnt = "Host=localhost;Port=5432;Database=teste_pim;Username=postgres;Password=686798";
+                    NpgsqlConnection postgre_cnt = new NpgsqlConnection(sqlcnt);
+                    postgre_cnt.Open();
+                    String sql = "select nome, idade, genero, estadocivil, telefone, renda, ocupacaoatual from tb_cadastro where cpf = ('" + txt_consulta_cpf.Text + "')";
 
-                NpgsqlCommand postgre_cmd = new NpgsqlCommand(sql, postgre_cnt);
+                    NpgsqlCommand postgre_cmd = new NpgsqlCommand(sql, postgre_cnt);
 
-                //executa o reader (leitor de dados)
-                NpgsqlDataReader reader = postgre_cmd.ExecuteReader();
+                    //executa o reader (leitor de dados)
+                    NpgsqlDataReader reader = postgre_cmd.ExecuteReader();
 
-                reader.Read();
-                //if (reader.Read()) /// coloca o reader dentro do if
-                //{
+                    reader.Read();
+                    //if (reader.Read()) /// coloca o reader dentro do if
+                    //{
                     txtNome.Text = reader.GetString(0);
                     txtIdade.Text = reader.GetValue(1).ToString();
                     txtGenero.Text = reader.GetString(2);
@@ -44,18 +46,26 @@ namespace MagSeguros
                     txtTelefone.Text = reader.GetString(4);
                     txtRenda.Text = reader.GetString(5);
                     txtOcupacaoAtual.Text = reader.GetString(6);
-               // }
+                    txtRenda.Text = "R$ " + txtRenda.Text;
+                    // }
 
-                /*else
+                    /*else
+                    {
+                        MessageBox.Show("Test");
+                    }*/
+
+                    postgre_cnt.Close();
+                }
+                else
                 {
-                    MessageBox.Show("Test");
-                }*/
-                
-                postgre_cnt.Close();
+                    MessageBox.Show("CPF inválido", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+
             }
             catch (Exception erro)
             {
-                MessageBox.Show("Cadastro não encontrado" + erro, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Cadastro não encontrado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -73,23 +83,32 @@ namespace MagSeguros
 
         private void button3_Click(object sender, EventArgs e)
         {
-            try
-            {
-                String sqlcnt = "Host=localhost;Database=teste01;Username=postgres;Password=dbadmin";
+           if (txt_consulta_cpf.Text != "" && txt_consulta_cpf.Text.Length == 14)
+           {
+                if (MessageBox.Show("Tem certeza que deseja deletar o cadastro?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.No
+)
+                {
+                    String sqlcnt = "Host=localhost;Port=5432;Database=teste_pim;Username=postgres;Password=686798";
 
-                NpgsqlConnection postgre_cnt = new NpgsqlConnection(sqlcnt);
-                postgre_cnt.Open();
+                    NpgsqlConnection postgre_cnt = new NpgsqlConnection(sqlcnt);
+                    postgre_cnt.Open();
 
-                NpgsqlCommand postgre_cmd = new NpgsqlCommand("delete from tb_cadastro where cpf = " + txt_consulta_cpf, postgre_cnt);
+                    NpgsqlCommand postgre_cmd = new NpgsqlCommand("delete from tb_cadastro where cpf = ('" + txt_consulta_cpf.Text + "')", postgre_cnt);
 
-                postgre_cmd.ExecuteNonQuery();
-                MessageBox.Show("Registro removido com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                postgre_cnt.Close();
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show("Não foi possível deletar", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
+                    postgre_cmd.ExecuteNonQuery();
+                    MessageBox.Show("Registro removido com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    postgre_cnt.Close();
+                    txt_consulta_cpf.Clear();
+                    txtNome.Clear();
+                    txtIdade.Clear();
+                    txtGenero.Clear();
+                    txtEstadoCivil.Clear();
+                    txtRenda.Clear();
+                    txtTelefone.Clear();
+                    txtOcupacaoAtual.Clear();
+                }
+                
+           }
 
         }
 
@@ -101,6 +120,21 @@ namespace MagSeguros
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
             txt_consulta_cpf.Text = maskedTextBox1.Text;
+        }
+
+        private void Tela_procurarCadastro_Load(object sender, EventArgs e)
+        {
+            maskedTextBox1.Focus();
+        }
+
+        private void txtTelefone_TextChanged(object sender, EventArgs e)
+        {
+            maskedTextBox2.Text = txtTelefone.Text;
+        }
+
+        private void txtRenda_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
