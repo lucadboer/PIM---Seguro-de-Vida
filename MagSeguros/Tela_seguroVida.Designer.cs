@@ -46,6 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -235,6 +236,19 @@
             this.label12.TabIndex = 10;
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(252)))));
+            this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(740, 446);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(97, 50);
+            this.button5.TabIndex = 41;
+            this.button5.Text = "Realizar Contrato";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Tela_seguroVida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -242,6 +256,7 @@
             this.BackgroundImage = global::MagSeguros.Properties.Resources.logo_pim;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(877, 510);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.logo);
@@ -287,5 +302,6 @@
         private Label label1;
         private Button button4;
         private Label label12;
+        private Button button5;
     }
 }

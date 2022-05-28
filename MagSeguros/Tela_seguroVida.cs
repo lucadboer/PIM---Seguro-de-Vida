@@ -12,6 +12,8 @@ namespace MagSeguros
 {
     public partial class Tela_seguroVida : Form
     {
+
+        Pessoa pessoa = new Pessoa();
         public Tela_seguroVida()
         {
             InitializeComponent();
@@ -32,14 +34,14 @@ namespace MagSeguros
 
         private void button1_Click(object sender, EventArgs e)
         {
-          double parcela = Pessoa.Idade / 2.5;
-          label12.Text = "A parcela do cliente será de R$ " + parcela.ToString("F2");
+            pessoa.parcela = Pessoa.Idade / 2.5;
+            label12.Text = "A parcela do cliente será de R$ " + pessoa.parcela.ToString("F2");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double parcela = (Pessoa.Idade / 2.5) * 2;
-            label12.Text = "A parcela do cliente será de R$ " + parcela.ToString("F2");
+            pessoa.parcela = (Pessoa.Idade / 2.5) * 2;
+            label12.Text = "A parcela do cliente será de R$ " + pessoa.parcela.ToString("F2");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -54,8 +56,24 @@ namespace MagSeguros
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            double parcela = (Pessoa.Idade / 2.5) * 3;
-            label12.Text = "A parcela do cliente será de R$ " + parcela.ToString("F2");
+            pessoa.parcela = (Pessoa.Idade / 2.5) * 3;
+            label12.Text = "A parcela do cliente será de R$ " + pessoa.parcela.ToString("F2");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (pessoa.parcela != 0)
+            {
+                if (MessageBox.Show("Confirmar esse contrato?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.No)
+                {
+                    MessageBox.Show($"Contrato de R$ {pessoa.parcela.ToString("F2")} realizado!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show($"Ainda nenhum plano foi selecionado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
         }
     }
 }

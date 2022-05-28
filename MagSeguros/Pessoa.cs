@@ -12,5 +12,6 @@ namespace MagSeguros
         public static string Senha;
         public static int Idade;
         public static string CPF;
+        public double parcela { get; set; }
     }
 }

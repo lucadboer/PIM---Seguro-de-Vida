@@ -50,7 +50,7 @@ namespace MagSeguros
 
 
             if (txtNome.Text == "" || txtCPF.Text == "" || txtIdade.Text == ""
-                && txtGenero.Text == "" || txtEstadoCivil.Text == "" || txtRenda.Text == "" || txtOcupacaoAtual.Text == "")
+                && txtGenero.Text == "" || txtEstadoCivil.Text == "" || txtRenda.Text == "" || txtOcupacaoAtual.Text == "" || comboDoença.Text != "Sim" && comboDoença.Text != "Não")
             {
                 MessageBox.Show("Todos os campos precisam ser preenchidos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -128,7 +128,7 @@ namespace MagSeguros
             txtTelefone.Clear();
             txtRenda.Clear();
             txtOcupacaoAtual.Clear();
-            //comboDoença.Clear();
+           // comboDoença.();
             txtNome.Focus();
         }
 
