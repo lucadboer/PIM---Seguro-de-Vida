@@ -39,6 +39,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_cd_nome = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +50,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(252)))));
-            this.label1.Location = new System.Drawing.Point(339, 37);
+            this.label1.Location = new System.Drawing.Point(331, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 21);
@@ -59,7 +61,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(348, 102);
+            this.label2.Location = new System.Drawing.Point(348, 154);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 16);
@@ -70,7 +72,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(348, 173);
+            this.label3.Location = new System.Drawing.Point(348, 226);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 16);
@@ -80,7 +82,7 @@
             // txt_cd_usuario
             // 
             this.txt_cd_usuario.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_cd_usuario.Location = new System.Drawing.Point(348, 136);
+            this.txt_cd_usuario.Location = new System.Drawing.Point(348, 189);
             this.txt_cd_usuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_cd_usuario.Name = "txt_cd_usuario";
             this.txt_cd_usuario.Size = new System.Drawing.Size(154, 21);
@@ -89,7 +91,7 @@
             // txt_cd_senha
             // 
             this.txt_cd_senha.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_cd_senha.Location = new System.Drawing.Point(348, 207);
+            this.txt_cd_senha.Location = new System.Drawing.Point(348, 260);
             this.txt_cd_senha.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_cd_senha.Name = "txt_cd_senha";
             this.txt_cd_senha.Size = new System.Drawing.Size(154, 21);
@@ -99,7 +101,7 @@
             // txt_confirmar_senha
             // 
             this.txt_confirmar_senha.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_confirmar_senha.Location = new System.Drawing.Point(348, 285);
+            this.txt_confirmar_senha.Location = new System.Drawing.Point(348, 334);
             this.txt_confirmar_senha.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_confirmar_senha.Name = "txt_confirmar_senha";
             this.txt_confirmar_senha.Size = new System.Drawing.Size(154, 21);
@@ -110,7 +112,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(348, 249);
+            this.label4.Location = new System.Drawing.Point(348, 298);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 16);
@@ -144,7 +146,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(252)))));
             this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(377, 335);
+            this.button1.Location = new System.Drawing.Point(384, 381);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 35);
@@ -153,12 +155,31 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(348, 79);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 16);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Nome :";
+            // 
+            // txt_cd_nome
+            // 
+            this.txt_cd_nome.Location = new System.Drawing.Point(348, 113);
+            this.txt_cd_nome.Name = "txt_cd_nome";
+            this.txt_cd_nome.Size = new System.Drawing.Size(154, 21);
+            this.txt_cd_nome.TabIndex = 11;
+            // 
             // tela_cadastro_fun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(596, 408);
+            this.ClientSize = new System.Drawing.Size(596, 441);
+            this.Controls.Add(this.txt_cd_nome);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -175,6 +196,7 @@
             this.Name = "tela_cadastro_fun";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mag Seguros";
+            this.Load += new System.EventHandler(this.tela_cadastro_fun_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -194,5 +216,7 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Button button1;
+        private Label label5;
+        private TextBox txt_cd_nome;
     }
 }

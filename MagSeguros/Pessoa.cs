@@ -8,7 +8,7 @@ namespace MagSeguros
 {
     internal class Pessoa
     {
-        public static string Usuario = "";
+        public static string Nome_Usuario = "";
         public static string Fun_Usuario;
         public static string Fun_Senha;
 

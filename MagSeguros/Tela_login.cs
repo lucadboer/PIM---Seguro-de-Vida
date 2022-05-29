@@ -64,7 +64,7 @@ namespace MagSeguros
                     NpgsqlConnection postgre_cnt = new NpgsqlConnection(sqlcnt);
                     postgre_cnt.Open();
 
-                    String sql = "select fun_usuario, fun_senha from tb_cadastro_funcionario where fun_usuario = ('" + txbUsuario.Text + "') and fun_senha = ('" + txbSenha.Text + "')";
+                    String sql = "select fun_usuario, fun_senha, fun_nome from tb_cadastro_funcionario where fun_usuario = ('" + txbUsuario.Text + "') and fun_senha = ('" + txbSenha.Text + "')";
 
                     NpgsqlCommand postgre_cmd = new NpgsqlCommand(sql, postgre_cnt);
 
@@ -75,6 +75,9 @@ namespace MagSeguros
                     //{
                     string usu = reader.GetString(0);
                     string senha = reader.GetString(1);
+                    string nome = reader.GetString(2);
+
+                    Pessoa.Nome_Usuario = nome;
 
                     postgre_cnt.Close();
 

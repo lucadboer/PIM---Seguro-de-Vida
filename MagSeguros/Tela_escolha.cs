@@ -24,7 +24,7 @@ namespace MagSeguros
 
         private void tela2_Load(object sender, EventArgs e)
         {
-            entrada.Text = $"Olá {Pessoa.Usuario}, o que deseja fazer?";
+            entrada.Text = $"Olá {Pessoa.Nome_Usuario.ToString()}, o que deseja fazer?";
         }
 
         private void button2_Click(object sender, EventArgs e)
