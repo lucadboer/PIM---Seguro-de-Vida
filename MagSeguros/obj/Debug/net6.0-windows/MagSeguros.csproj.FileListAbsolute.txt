@@ -172,4 +172,4 @@ C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM - Seguro de Vida\MagSeg
 C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM - Seguro de Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.genruntimeconfig.cache
 C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM - Seguro de Vida\MagSeguros\obj\Debug\net6.0-windows\ref\MagSeguros.dll
 C:\Users\lucah\OneDrive\Área de Trabalho\PIM - Seguro de Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.Tela_listarCadastros.resources
-C:\Users\lucah\OneDrive\Área de Trabalho\PIM - Seguro de Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.Form1.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\PIM - Seguro de Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.tela_cadastro_fun.resources

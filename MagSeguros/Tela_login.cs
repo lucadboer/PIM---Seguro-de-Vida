@@ -37,17 +37,7 @@ namespace MagSeguros
         private void bttEntrar_Click(object sender, EventArgs e)
         {
 
-            //NpgsqlConnection conn = new NpgsqlConnection(connString);
-            //conn.Open();
-
-            // NpgsqlConnection cmd = new NpgsqlConnection(connString);
-
-            // realizar querys
-
-            //String usuario = txbUsuario.Text;
-            //String senha = txbSenha.Text;
-
-            //MessageBox.Show("Login");
+          
 
             if (txbSenha.Text == "" & txbUsuario.Text == "")
             {
@@ -67,12 +57,40 @@ namespace MagSeguros
 
             if (txbUsuario.Text != "" && txbSenha.Text != "")
             {
-                Pessoa.Usuario = txbUsuario.Text;
-                Pessoa.Senha = txbSenha.Text;
+                try
+                {
+                    String sqlcnt = "Host=localhost;Port=5432;Database=teste_pim;Username=postgres;Password=686798";
 
-                Tela_escolha tela_Escolha = new Tela_escolha();
-                tela_Escolha.Show();
-                this.Hide();
+                    NpgsqlConnection postgre_cnt = new NpgsqlConnection(sqlcnt);
+                    postgre_cnt.Open();
+
+                    String sql = "select fun_usuario, fun_senha from tb_cadastro_funcionario where fun_usuario = ('" + txbUsuario.Text + "') and fun_senha = ('" + txbSenha.Text + "')";
+
+                    NpgsqlCommand postgre_cmd = new NpgsqlCommand(sql, postgre_cnt);
+
+                    NpgsqlDataReader reader = postgre_cmd.ExecuteReader();
+
+                    reader.Read();
+                    //if (reader.Read()) /// coloca o reader dentro do if
+                    //{
+                    string usu = reader.GetString(0);
+                    string senha = reader.GetString(1);
+
+                    postgre_cnt.Close();
+
+                    if (usu == txbUsuario.Text && senha == txbSenha.Text)
+                    {
+                        Tela_escolha tela_Escolha = new Tela_escolha();
+                        tela_Escolha.Show();
+                        this.Hide();
+                    }
+        
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show("Usuário ou senha incorretos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+               
             }
 
         }
@@ -89,6 +107,13 @@ namespace MagSeguros
 
         private void Tela_login_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btn_cadastro_Click(object sender, EventArgs e)
+        {
+            tela_cadastro_fun tela_Cadastro_Fun = new tela_cadastro_fun();
+            tela_Cadastro_Fun.ShowDialog();
 
         }
     }

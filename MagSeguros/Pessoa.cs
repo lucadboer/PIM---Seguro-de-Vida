@@ -9,6 +9,10 @@ namespace MagSeguros
     internal class Pessoa
     {
         public static string Usuario = "";
+        public static string Fun_Usuario;
+        public static string Fun_Senha;
+
+
         public static string Senha;
         public static int Idade;
         public static string CPF;

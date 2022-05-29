@@ -39,6 +39,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairDoProgramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_cadastro = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +70,7 @@
             // nome
             // 
             this.nome.AutoSize = true;
-            this.nome.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nome.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nome.Location = new System.Drawing.Point(426, 168);
             this.nome.Name = "nome";
             this.nome.Size = new System.Drawing.Size(57, 15);
@@ -92,7 +93,7 @@
             this.bttEntrar.FlatAppearance.BorderColor = System.Drawing.SystemColors.Desktop;
             this.bttEntrar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bttEntrar.ForeColor = System.Drawing.Color.White;
-            this.bttEntrar.Location = new System.Drawing.Point(465, 318);
+            this.bttEntrar.Location = new System.Drawing.Point(426, 314);
             this.bttEntrar.Name = "bttEntrar";
             this.bttEntrar.Size = new System.Drawing.Size(82, 31);
             this.bttEntrar.TabIndex = 4;
@@ -103,7 +104,7 @@
             // senha
             // 
             this.senha.AutoSize = true;
-            this.senha.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.senha.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.senha.Location = new System.Drawing.Point(426, 238);
             this.senha.Name = "senha";
             this.senha.Size = new System.Drawing.Size(49, 15);
@@ -146,6 +147,20 @@
             this.sairDoProgramaToolStripMenuItem.Text = "Sair do Programa";
             this.sairDoProgramaToolStripMenuItem.Click += new System.EventHandler(this.sairDoProgramaToolStripMenuItem_Click);
             // 
+            // btn_cadastro
+            // 
+            this.btn_cadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(252)))));
+            this.btn_cadastro.FlatAppearance.BorderColor = System.Drawing.SystemColors.Desktop;
+            this.btn_cadastro.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_cadastro.ForeColor = System.Drawing.Color.White;
+            this.btn_cadastro.Location = new System.Drawing.Point(514, 314);
+            this.btn_cadastro.Name = "btn_cadastro";
+            this.btn_cadastro.Size = new System.Drawing.Size(82, 31);
+            this.btn_cadastro.TabIndex = 8;
+            this.btn_cadastro.Text = "Cadastrar";
+            this.btn_cadastro.UseVisualStyleBackColor = false;
+            this.btn_cadastro.Click += new System.EventHandler(this.btn_cadastro_Click);
+            // 
             // Tela_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -154,6 +169,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(683, 473);
+            this.Controls.Add(this.btn_cadastro);
             this.Controls.Add(this.txbSenha);
             this.Controls.Add(this.senha);
             this.Controls.Add(this.bttEntrar);
@@ -189,5 +205,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem opçõesToolStripMenuItem;
         private ToolStripMenuItem sairDoProgramaToolStripMenuItem;
+        private Button btn_cadastro;
     }
 }
