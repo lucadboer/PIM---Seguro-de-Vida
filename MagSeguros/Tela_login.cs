@@ -115,9 +115,8 @@ namespace MagSeguros
 
         private void btn_cadastro_Click(object sender, EventArgs e)
         {
-            tela_cadastro_fun tela_Cadastro_Fun = new tela_cadastro_fun();
-            tela_Cadastro_Fun.ShowDialog();
-
+            tela_senha_administrador tela_Senha_Administrador = new tela_senha_administrador();
+            tela_Senha_Administrador.ShowDialog();
         }
     }
 }

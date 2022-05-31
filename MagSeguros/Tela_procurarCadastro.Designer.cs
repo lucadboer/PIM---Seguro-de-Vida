@@ -305,7 +305,7 @@
             // 
             this.maskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.maskedTextBox2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox2.Location = new System.Drawing.Point(782, 284);
+            this.maskedTextBox2.Location = new System.Drawing.Point(782, 287);
             this.maskedTextBox2.Mask = "(99) 00000-0000";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(162, 19);

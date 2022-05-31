@@ -173,3 +173,33 @@ C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM - Seguro de Vida\MagSeg
 C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM - Seguro de Vida\MagSeguros\obj\Debug\net6.0-windows\ref\MagSeguros.dll
 C:\Users\lucah\OneDrive\Área de Trabalho\PIM - Seguro de Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.Tela_listarCadastros.resources
 C:\Users\lucah\OneDrive\Área de Trabalho\PIM - Seguro de Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.tela_cadastro_fun.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\bin\Debug\net6.0-windows\MagSeguros.exe
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\bin\Debug\net6.0-windows\MagSeguros.deps.json
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\bin\Debug\net6.0-windows\MagSeguros.runtimeconfig.json
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\bin\Debug\net6.0-windows\MagSeguros.dll
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\bin\Debug\net6.0-windows\MagSeguros.pdb
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.csproj.AssemblyReference.cache
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.Properties.Resources.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.TelaDeCadastro.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.tela_cadastro_fun.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.Tela_escolha.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.Tela_listarCadastros.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.Tela_login.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.Tela_procurarCadastro.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.Tela_seguro.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.Tela_seguroDoencaGrave.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.Tela_seguroVida.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.csproj.GenerateResource.cache
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.AssemblyInfoInputs.cache
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.AssemblyInfo.cs
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.csproj.CoreCompileInputs.cache
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.csproj.CopyComplete
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.dll
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\refint\MagSeguros.dll
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.pdb
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.genruntimeconfig.cache
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\ref\MagSeguros.dll
+C:\Users\lucah\OneDrive\Área de Trabalho\Nova pasta\PIM---Seguro-de-Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.tela_senha_administrador.resources
+C:\Users\lucah\OneDrive\Área de Trabalho\PIM - Seguro de Vida\MagSeguros\obj\Debug\net6.0-windows\MagSeguros.tela_senha_administrador.resources
