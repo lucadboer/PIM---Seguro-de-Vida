@@ -40,7 +40,7 @@ namespace MagSeguros
                     }
                     else
                     {
-                        String sqlcnt = "Host=localhost;Port=5432;Database=teste_pim;Username=postgres;Password=686798";
+                        String sqlcnt = "Host=localhost;Port=2526;Database=teste_pim;Username=postgres;Password=252601";
 
                         NpgsqlConnection postgre_cnt = new NpgsqlConnection(sqlcnt);
                         postgre_cnt.Open();

@@ -26,7 +26,7 @@ namespace MagSeguros
             {
                 if (txt_consulta_cpf.Text != "" && txt_consulta_cpf.Text.Length == 14)
                 {
-                    String sqlcnt = "Host=localhost;Port=5432;Database=teste_pim;Username=postgres;Password=686798";
+                    String sqlcnt = "Host=localhost;Port=2526;Database=teste_pim;Username=postgres;Password=252601";
                     NpgsqlConnection postgre_cnt = new NpgsqlConnection(sqlcnt);
                     postgre_cnt.Open();
                     String sql = "select nome, idade, genero, estadocivil, telefone, renda, ocupacaoatual from tb_cadastro where cpf = ('" + txt_consulta_cpf.Text + "')";
@@ -88,7 +88,7 @@ namespace MagSeguros
                 if (MessageBox.Show("Tem certeza que deseja deletar o cadastro?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.No
 )
                 {
-                    String sqlcnt = "Host=localhost;Port=5432;Database=teste_pim;Username=postgres;Password=686798";
+                    String sqlcnt = "Host=localhost;Port=2526;Database=teste_pim;Username=postgres;Password=252601";
 
                     NpgsqlConnection postgre_cnt = new NpgsqlConnection(sqlcnt);
                     postgre_cnt.Open();
